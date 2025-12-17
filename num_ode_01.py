@@ -12,14 +12,10 @@ t_end = 5.0
 h = 0.1  
 y0 = 1.0  
 
-
-# 导函数 f(t, y) = y'
 def f(t, y):
     """ODE: y' = t^2 - y"""
     return t ** 2 - y
 
-
-# 精确解 y(t) = -e^(-t) + t^2 - 2t + 2
 def exact_solution(t):
     """Exact solution for the ODE"""
     return -np.exp(-t) + t ** 2 - 2 * t + 2
